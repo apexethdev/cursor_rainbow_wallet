@@ -4,6 +4,10 @@ A standalone Next.js 16 demo app that shows how to run a dev wallet inside Curso
 
 `Cursor Wallet` simulates extension-wallet flows (connect, sign, switch chain, send tx) so you can test wallet UX in environments where browser extensions are unavailable.
 
+## Screenshot
+
+![Cursor Wallet Demo UI](docs/cursor-wallet-demo.png)
+
 ## Stack
 
 - Next.js 16 (App Router, TypeScript)

@@ -127,16 +127,21 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-8 px-6 py-10 lg:px-10">
-        <header className="space-y-4">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-            Cursor Browser Preview Demo
-          </p>
+        <header className="flex flex-col items-center space-y-4 text-center">
           <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
             Cursor Wallet with RainbowKit and Wagmi
           </h1>
           <p className="max-w-3xl text-muted-foreground sm:text-base">
             This project demonstrates wallet connect/sign/switch/send flows in
             Cursor preview mode without browser extension wallets.
+          </p>
+          <p className="max-w-3xl rounded-md border border-yellow-500/50 bg-yellow-500/10 px-4 py-3 text-sm text-yellow-700 dark:text-yellow-400">
+            <strong>Warning:</strong> The private key is stored in a{" "}
+            <code>NEXT_PUBLIC_</code> environment variable, which means it is
+            embedded in the client-side bundle and visible to anyone who
+            inspects the page. Never commit <code>.env.local</code>, use a
+            real wallet, or deploy this app beyond your local development
+            environment.
           </p>
         </header>
 
